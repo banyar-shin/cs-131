@@ -1,0 +1,24 @@
+# Question 1
+
+echo $HOME
+
+
+# Question 2
+
+ls /proc | grep mem
+ls /proc | grep cpu
+cat /proc/meminfo
+cat /proc/cpuinfo
+
+
+# Question 3
+
+ls /etc | grep 'os'
+cat /etc/os-release
+
+
+# Question 4
+
+head -n 1 2019-04.csv
+cut -d',' -f2,8 2019-04.csv | grep '2019-04-02' | cut -d',' -f2 | sort | uniq -c | sort -nr | head -n 3
+cut -d',' -f2,8 2019-04.csv | grep '2019-04-10' | cut -d',' -f2 | sort | uniq -c | sort -nr | head -n 3

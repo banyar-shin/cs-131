@@ -1,0 +1,74 @@
+Question 1
+
+Answer: /home/banyar-ego
+
+Terminal Output:
+
+banyar-ego@ubuntu-machine:~/cs-131/a1$ echo $HOME
+/home/banyar-ego
+
+
+# Question 2
+
+Answer: meminfo and cpuinfo
+
+Terminal Output:
+
+banyar-ego@ubuntu-machine:~/cs-131/a1$ ls /proc | grep mem
+iomem
+meminfo
+
+banyar-ego@ubuntu-machine:~/cs-131/a1$ ls /proc | grep cpu
+cpuinfo
+
+# Question 3
+
+- Answer: /etc/os-release
+
+Terminal Output:
+
+banyar-ego@ubuntu-machine:~/cs-131/a1$ ls /etc | grep os
+host.conf
+hostname
+hosts
+hosts.allow
+hosts.deny
+os-release
+sos
+
+banyar-ego@ubuntu-machine:~/cs-131/a1$ cat /etc/os-release
+NAME="Ubuntu"
+VERSION="20.04.6 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.6 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+
+
+# Question 4
+
+Answer:
+
+A - 161, 237, 236
+B - 161, 237, 236
+
+Terminal Output:
+
+banyar-ego@ubuntu-machine:~/cs-131/a1$ head -n 1 2019-04.csv
+vendorid,tpep_pickup_datetime,tpep_dropoff_datetime,passenger_count,trip_distance,ratecodeid,store_and_fwd_flag,pulocationid,dolocationid,payment_type,fare_amount,extra,mta_tax,tip_amount,tolls_amount,improvement_surcharge,total_amount,congestion_surcharge
+
+banyar-ego@ubuntu-machine:~/cs-131/a1$ cut -d',' -f2,8 2019-04.csv | grep '2019-04-02' | cut -d',' -f2 | sort | uniq -c | sort -nr | head -n 3
+  13279 161.0
+  12380 237.0
+  11102 236.0
+
+banyar-ego@ubuntu-machine:~/cs-131/a1$ cut -d',' -f2,8 2019-04.csv | grep '2019-04-10' | cut -d',' -f2 | sort | uniq -c | sort -nr | head -n 3
+  13200 161.0
+  12905 237.0
+  11242 236.0
