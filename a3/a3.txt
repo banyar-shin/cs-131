@@ -1,0 +1,41 @@
+Assignment 3
+
+awk -f grader.awk grades.csv
+
+Output:
+
+Student Grade Report
+===================
+
+Individual Reports:
+
+Student Name: Alice
+Total Score: 253
+Average Score: 84.33
+Status: Pass
+-------------------
+Student Name: Bob
+Total Score: 246
+Average Score: 82.00
+Status: Pass
+-------------------
+Student Name: Charlie
+Total Score: 270
+Average Score: 90.00
+Status: Pass
+-------------------
+Student Name: David
+Total Score: 195
+Average Score: 65.00
+Status: Fail
+-------------------
+Student Name: Eve
+Total Score: 265
+Average Score: 88.33
+Status: Pass
+-------------------
+
+Top and Bottom Performers:
+
+Highest Scoring Student: Charlie (Total: 270)
+Lowest Scoring Student: David (Total: 195)

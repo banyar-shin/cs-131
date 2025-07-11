@@ -1,0 +1,3 @@
+chmod +x grader.awk
+awk -f grader.awk grades.csv
+cat output.txt
