@@ -1,0 +1,4 @@
+# Necessary permissions for metadatacollector.sh
+chmod 777 metadatacollector.sh
+
+./metadatacollector.sh

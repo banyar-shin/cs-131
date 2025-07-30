@@ -1,0 +1,13 @@
+# Output from running ./metadatacollector.sh
+Enter URL for dataset: 
+ https://www.kaggle.com/api/v1/datasets/download/datasnaek/chess
+Downloading data
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 2835k  100 2835k    0     0  3221k      0 --:--:-- --:--:-- --:--:-- 32.7M
+Download complete
+Archive:  ./archive.zip
+  inflating: ./games.csv             
+Metadata collection completed for games.csv with the name games_metadata.md
+Script completed
